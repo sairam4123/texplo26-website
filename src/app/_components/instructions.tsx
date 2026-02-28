@@ -6,6 +6,7 @@ import {
   CheckCircle2,
   ShieldAlert,
   ClipboardList,
+  FileText,
 } from "lucide-react";
 import FloatingParticles from "./floating-particles";
 
@@ -19,6 +20,13 @@ const instructions = [
   "The college rules must be adhered during the events.",
   "Judge\u2019s decision will be the final and binding.",
   "Any events can be cancelled based on the decision of organizing committee.",
+];
+
+const screenSpeaksRules = [
+  "Maximum 2 students per team.",
+  "Plagiarism is not allowed.",
+  "Technical paper should not exceed 4 pages.",
+  "Send the paper to the mentioned Gmail Id while registering.",
 ];
 
 const importantDates = [
@@ -89,7 +97,7 @@ export default function Instructions() {
               </div>
             </div>
 
-            {/* Important Dates + Registration Fee */}
+            {/* Important Dates + Registration Fee + Paper Rules */}
             <div className="flex flex-col gap-6">
               {/* Important Dates */}
               <div className="overflow-hidden rounded-2xl border border-white/10 bg-white shadow-2xl">

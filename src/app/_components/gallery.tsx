@@ -30,7 +30,7 @@ export default function Gallery() {
             Gallery
           </h2>
           <p className="mb-10 text-center text-slate-400">
-            Moments captured from past Texplo editions
+            Moments captured from past Tecxplo editions
           </p>
         </motion.div>
 

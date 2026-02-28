@@ -11,17 +11,17 @@
     "phone": "9944617849",
     "email": "tecxplo26@gmail.com"
   },
+  "deptCoordinator": {
+    "name": "Mrs. S. Himagiri Sudha",
+    "designation": "Dept. Coordinator – AP / IT, M.E.",
+    "phone": "9843696623"
+  },
+  "eventCoordinator": {
+    "name": "Mr. N. Kanagaraj",
+    "designation": "Event Coordinator (Non-Technical) – Asso. Prof. / ECE, M.E., (Ph.D).",
+    "phone": "9791317791"
+  },
   "studentCoordinators": [
-    {
-      "name": "Sairam M",
-      "designation": "Overall Student Coordinator",
-      "phone": "9876543212"
-    },
-    {
-      "name": "Karthikeyan R",
-      "designation": "Student Coordinator",
-      "phone": "8870957957"
-    },
     {
       "name": "Jafer Sheriff",
       "designation": "Student Coordinator",

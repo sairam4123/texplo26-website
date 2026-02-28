@@ -1,19 +1,24 @@
 {
   "departments": [
     {
-      "name": "Department of IT",
+      "name": "Department of IT & AI&ML",
+      "deptCoordinator": {
+        "name": "Mrs. S. Himagiri Sudha, M.E.",
+        "designation": "AP / IT",
+        "phone": "9843696623"
+      },
       "events": [
         {
-          "id": "paper-presentation",
-          "title": "Paper Presentation",
-          "icon": "FileText",
+          "id": "screen-speaks",
+          "title": "Screen Speaks",
+          "icon": "Monitor",
           "eventType": "TECHNICAL",
-          "desc": "Participants present a paper on a topic of their choice related to technology or computer science. The presentation should be followed by a Q&A session.",
+          "desc": "Screen Speaks is a paper presentation event where participants present a technical paper on a topic of their choice. The presentation should demonstrate knowledge, clarity, and innovation.",
           "rules": [
-            "Participants must submit a paper in advance.",
-            "Presentation should only be 7-10 minutes long.",
-            "Max two participants per team.",
-            "Not more than 20 slides per presentation."
+            "Maximum 2 students per team.",
+            "Plagiarism is not allowed.",
+            "Technical paper should not exceed 4 pages.",
+            "Send the paper to the mentioned Gmail Id while registering."
           ],
           "details": {
             "teamSize": "1-2",
@@ -22,7 +27,7 @@
             "rounds": [
               {
                 "name": "Presentation",
-                "description": "Present your paper using slides (max 20). Each team gets 7-10 minutes followed by a 3-minute Q&A."
+                "description": "Present your paper using slides. Each team gets 7-10 minutes followed by a Q&A session."
               }
             ],
             "coordinators": [
@@ -30,8 +35,8 @@
               { "name": "Jafer Sheriff", "phone": "9360964478" }
             ],
             "moreInfo": [
-              "Participants not participating in the Code Relay event are allowed First batch only.",
-              "Participants participating in the Code Relay are allowed in Second batch only."
+              "Paper submission deadline: 25.02.2026",
+              "Intimation of acceptance: 28.02.2026"
             ]
           }
         },
@@ -69,18 +74,15 @@
               { "name": "Karthikeyan R", "phone": "8870957957" },
               { "name": "Jafer Sheriff", "phone": "9360964478" }
             ],
-            "moreInfo": [
-              "Participants not participating in the Paper Presentation event are allowed First batch only.",
-              "Participants participating in the Paper Presentation are allowed in Second batch only."
-            ]
+            "moreInfo": []
           }
         },
         {
           "id": "pixel-cut",
           "title": "Pixel Cut",
-          "icon": "Database",
+          "icon": "Scissors",
           "eventType": "TECHNICAL",
-          "desc": "Pixel Cut is an poster making event where participants are given a image and must create a poster based on the theme of the image. The poster should be visually appealing and should convey a message related to technology or computer science.",
+          "desc": "Pixel Cut is a poster making event where participants are given an image and must create a poster based on the theme of the image. The poster should be visually appealing and should convey a message related to technology or computer science.",
           "rules": [
             "Solo event.",
             "Participants must create a poster based on the given image.",
@@ -102,6 +104,84 @@
             },
             "coordinators": [{ "name": "Deepak R", "phone": "9876543212" }],
             "moreInfo": []
+          }
+        },
+        {
+          "id": "photography",
+          "title": "Photography",
+          "icon": "Camera",
+          "eventType": "NON_TECHNICAL",
+          "desc": "Showcase your photography skills in this creative non-technical event. Details will be announced soon.",
+          "rules": ["Details pending. Stay tuned!"],
+          "details": {
+            "teamSize": "TBA",
+            "duration": "TBA",
+            "venue": "TBA",
+            "rounds": [
+              {
+                "name": "TBA",
+                "description": "Round details will be announced soon."
+              }
+            ],
+            "coordinators": [
+              {
+                "name": "Mr. N. Kanagaraj, M.E., (Ph.D).",
+                "phone": "9791317791"
+              }
+            ],
+            "moreInfo": ["Attractive prizes for non-technical events!"]
+          }
+        },
+        {
+          "id": "free-fire",
+          "title": "Free Fire",
+          "icon": "Gamepad2",
+          "eventType": "NON_TECHNICAL",
+          "desc": "Compete in this thrilling Free Fire gaming tournament. Show your gaming skills and dominate the battlefield!",
+          "rules": ["Details pending. Stay tuned!"],
+          "details": {
+            "teamSize": "TBA",
+            "duration": "TBA",
+            "venue": "TBA",
+            "rounds": [
+              {
+                "name": "TBA",
+                "description": "Round details will be announced soon."
+              }
+            ],
+            "coordinators": [
+              {
+                "name": "Mr. N. Kanagaraj, M.E., (Ph.D).",
+                "phone": "9791317791"
+              }
+            ],
+            "moreInfo": ["Attractive prizes for non-technical events!"]
+          }
+        },
+        {
+          "id": "dialogue-decode",
+          "title": "Dialogue Decode",
+          "icon": "MessageSquare",
+          "eventType": "NON_TECHNICAL",
+          "desc": "Test your knowledge of iconic dialogues and scenes. Details will be announced soon.",
+          "rules": ["Details pending. Stay tuned!"],
+          "details": {
+            "teamSize": "TBA",
+            "duration": "TBA",
+            "venue": "TBA",
+            "rounds": [
+              {
+                "name": "TBA",
+                "description": "Round details will be announced soon."
+              }
+            ],
+            "coordinators": [
+              {
+                "name": "Mr. N. Kanagaraj, M.E., (Ph.D).",
+                "phone": "9791317791"
+              }
+            ],
+            "moreInfo": ["Attractive prizes for non-technical events!"]
           }
         },
         {
@@ -134,8 +214,65 @@
               "second": "1,500",
               "third": "500"
             },
-            "coordinators": [{ "name": "Surya M", "phone": "9876500001" }],
+            "coordinators": [
+              {
+                "name": "Mr. N. Kanagaraj, M.E., (Ph.D).",
+                "phone": "9791317791"
+              }
+            ],
             "moreInfo": []
+          }
+        },
+        {
+          "id": "carnival-craze",
+          "title": "Carnival Craze",
+          "icon": "Sparkles",
+          "eventType": "NON_TECHNICAL",
+          "desc": "A fun-filled carnival event with exciting activities and games. Details will be announced soon.",
+          "rules": ["Details pending. Stay tuned!"],
+          "details": {
+            "teamSize": "TBA",
+            "duration": "TBA",
+            "venue": "TBA",
+            "rounds": [
+              {
+                "name": "TBA",
+                "description": "Round details will be announced soon."
+              }
+            ],
+            "coordinators": [
+              {
+                "name": "Mr. N. Kanagaraj, M.E., (Ph.D).",
+                "phone": "9791317791"
+              }
+            ],
+            "moreInfo": ["Attractive prizes for non-technical events!"]
+          }
+        },
+        {
+          "id": "connections",
+          "title": "Connections",
+          "icon": "Network",
+          "eventType": "NON_TECHNICAL",
+          "desc": "Find the hidden connections between seemingly unrelated clues. Details will be announced soon.",
+          "rules": ["Details pending. Stay tuned!"],
+          "details": {
+            "teamSize": "TBA",
+            "duration": "TBA",
+            "venue": "TBA",
+            "rounds": [
+              {
+                "name": "TBA",
+                "description": "Round details will be announced soon."
+              }
+            ],
+            "coordinators": [
+              {
+                "name": "Mr. N. Kanagaraj, M.E., (Ph.D).",
+                "phone": "9791317791"
+              }
+            ],
+            "moreInfo": ["Attractive prizes for non-technical events!"]
           }
         }
       ]

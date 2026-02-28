@@ -67,14 +67,14 @@ export default function Hero() {
           <div className="mb-4 flex justify-center">
             <Image
               src="/logos/texplo.png"
-              alt="Texplo'26 logo"
+              alt="Tecxplo'26 logo"
               width={80}
               height={80}
               className="h-20 w-20 object-contain"
             />
           </div>
           <h1 className="mb-2 text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
-            TEXPLO&apos;26
+            TECXPLO&apos;26
           </h1>
           <p className="mb-1 text-lg font-medium text-cyan-300">
             Skill. Compete. Conquer.

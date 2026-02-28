@@ -1,7 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, Mail, GraduationCap, Crown } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  GraduationCap,
+  Crown,
+  Building2,
+  Megaphone,
+} from "lucide-react";
 import FloatingParticles from "./floating-particles";
 import coordinatorsData from "~/data/coordinators.json";
 
@@ -15,6 +22,10 @@ interface CoordinatorInfo {
 const convenor: CoordinatorInfo = coordinatorsData.convenor as CoordinatorInfo;
 const coConvenor: CoordinatorInfo =
   coordinatorsData.coConvenor as CoordinatorInfo;
+const deptCoordinator: CoordinatorInfo =
+  coordinatorsData.deptCoordinator as CoordinatorInfo;
+const eventCoordinator: CoordinatorInfo =
+  coordinatorsData.eventCoordinator as CoordinatorInfo;
 const studentCoordinators: CoordinatorInfo[] =
   coordinatorsData.studentCoordinators as CoordinatorInfo[];
 
@@ -108,6 +119,20 @@ export default function Coordinators() {
                   {studentCoordinators.map((person) => (
                     <CoordinatorCard key={person.phone} person={person} />
                   ))}
+                </div>
+              </div>
+
+              {/* Department & Event Coordinators */}
+              <div className="mt-10">
+                <div className="mb-4 flex items-center gap-2">
+                  <Building2 className="h-5 w-5 text-cyan-500" />
+                  <h3 className="text-xl font-bold text-slate-900">
+                    Department &amp; Event Coordinators
+                  </h3>
+                </div>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <CoordinatorCard person={deptCoordinator} />
+                  <CoordinatorCard person={eventCoordinator} />
                 </div>
               </div>
             </div>

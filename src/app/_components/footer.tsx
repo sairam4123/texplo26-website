@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="mb-4 flex items-center gap-4">
         <Image
           src="/logos/texplo.png"
-          alt="Texplo logo"
+          alt="Tecxplo logo"
           width={40}
           height={40}
           className="h-10 w-10 object-contain"
@@ -30,7 +30,7 @@ export default function Footer() {
       </div>
 
       <p className="text-sm text-slate-400">
-        &copy; {new Date().getFullYear()} TEXPLO Committee. All rights reserved.
+        &copy; {new Date().getFullYear()} TECXPLO Committee. All rights reserved.
       </p>
       <p className="mt-2 flex items-center gap-1 text-xs text-slate-500">
         Made with <Heart className="h-3 w-3 text-red-400" /> by Sairam M (Dept

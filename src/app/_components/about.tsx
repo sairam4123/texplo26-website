@@ -7,7 +7,7 @@ import FloatingParticles from "./floating-particles";
 const stats = [
   { icon: Users, label: "Departments", value: "8" },
   { icon: Calendar, label: "Events", value: "20+" },
-  { icon: Trophy, label: "Cash Prizes", value: "Massive" },
+  { icon: Trophy, label: "Cash Prizes", value: "₹1 Lakh" },
   { icon: BookOpen, label: "Workshops", value: "Multiple" },
 ];
 
@@ -34,7 +34,7 @@ export default function About() {
         >
           <div className="p-8 md:p-12">
             <h2 className="mb-6 text-4xl font-extrabold text-slate-900">
-              About Texplo&apos;26
+              About Tecxplo&apos;26
             </h2>
 
             <div className="space-y-4 leading-relaxed text-slate-700">
@@ -43,37 +43,44 @@ export default function About() {
                 Institution&apos;s Innovation Council (IIC)
               </p>
               <p>
+                <span className="font-semibold text-cyan-600">
+                  Mookambigai College of Engineering
+                </span>
+                , approved by AICTE, New Delhi and Affiliated to Anna
+                University, Chennai, was established in the year 1985. It is
+                located 26 km away from Trichy and Pudukkottai. Our Institution
+                is under aegis of Sri Mariamman Educational, Health and
+                Charitable Trust with the aim of imparting higher knowledge in
+                Engineering and Technology.
+              </p>
+              <p>
+                The college has 9 UG Courses (CSE, ECE, MECHANICAL, AI&amp;DS,
+                EEE, EIE, IT, CIVIL and AI&amp;ML) and 3 PG Courses (CSE,
+                Manufacturing Engineering and Communication Systems). The
+                college has signed MoU with industries like INFOSYS, SIEMENS, VR
+                Della etc.
+              </p>
+              <p>
                 Happening offline every year,{" "}
                 <span className="font-semibold text-cyan-600">
-                  TEXPLO&apos;26
+                  TECXPLO&apos;26
                 </span>{" "}
                 is more than just an event &mdash; it&apos;s a knowledge-sharing
-                playground where learning gets gamified.
-              </p>
-              <p>
-                Whether you&apos;re here to upskill, compete, or connect,
-                we&apos;ve crafted a lineup of dynamic tech challenges and
-                experiences that bring out the best in you.
-              </p>
-              <p>
-                With massive cash prizes and a stage that celebrates real
-                talent, this is your chance to learn, level up, and lead.
+                playground where learning gets gamified. With exciting cash
+                prizes worth of{" "}
+                <span className="font-bold text-cyan-600">₹1 Lakh</span> and
+                attractive prizes for non-technical events, this is your chance
+                to learn, level up, and lead.
               </p>
               <p>
                 With <span className="font-bold text-cyan-600">8</span>{" "}
                 departments and{" "}
                 <span className="font-bold text-cyan-600">20+</span> events,{" "}
                 <span className="font-semibold text-cyan-600">
-                  TEXPLO&apos;26
+                  TECXPLO&apos;26
                 </span>{" "}
                 is a platform for students to showcase their skills and
-                knowledge in various technical fields.
-              </p>
-              <p>
-                From coding competitions to workshops, we have something for
-                everyone. Whether you&apos;re a seasoned pro or just starting
-                out, we invite you to join us and be part of this exciting
-                journey.
+                knowledge in various technical and non-technical fields.
               </p>
             </div>
 
