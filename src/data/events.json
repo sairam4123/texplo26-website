@@ -1,0 +1,198 @@
+{
+  "departments": [
+    {
+      "name": "Department of IT",
+      "events": [
+        {
+          "id": "paper-presentation",
+          "title": "Paper Presentation",
+          "icon": "FileText",
+          "eventType": "TECHNICAL",
+          "desc": "Participants present a paper on a topic of their choice related to technology or computer science. The presentation should be followed by a Q&A session.",
+          "rules": [
+            "Participants must submit a paper in advance.",
+            "Presentation should only be 7-10 minutes long.",
+            "Max two participants per team.",
+            "Not more than 15 slides per presentation."
+          ],
+          "details": {
+            "teamSize": "1-2",
+            "duration": "7-10 minutes",
+            "venue": "Seminar Hall A",
+            "rounds": [
+              {
+                "name": "Abstract Submission",
+                "description": "Submit a 300-word abstract on any topic related to technology or computer science. Shortlisted teams will proceed to the next round."
+              },
+              {
+                "name": "Presentation",
+                "description": "Present your paper using slides (max 15). Each team gets 7-10 minutes followed by a 3-minute Q&A."
+              }
+            ],
+            "prizes": {
+              "first": "3,000",
+              "second": "2,000",
+              "third": "1,000"
+            },
+            "coordinators": [
+              { "name": "Arun Kumar", "phone": "8870957957" },
+              { "name": "Priya S", "phone": "9360964478" }
+            ],
+            "moreInfo": [
+              "Participants not participating in the Code Relay event are allowed First batch only.",
+              "Participants participating in the Code Relay are allowed in Second batch only."
+            ]
+          }
+        },
+        {
+          "id": "code-relay",
+          "title": "Code Relay",
+          "icon": "Code2",
+          "eventType": "TECHNICAL",
+          "desc": "Code Relay is a competitive programming event where problems must be solved in a strict sequential order. The output of each question serves as the input for the next.",
+          "rules": [
+            "Solo event.",
+            "Participants must solve problems in a sequential order.",
+            "Participants must submit their solutions within the given time limit."
+          ],
+          "details": {
+            "teamSize": "1 (Solo)",
+            "duration": "90 minutes",
+            "venue": "Computer Lab 1",
+            "rounds": [
+              {
+                "name": "Prelims",
+                "description": "Solve 10 MCQ-based questions on programming fundamentals. Top 20 participants advance."
+              },
+              {
+                "name": "Relay Round",
+                "description": "Solve 5 chained coding problems. The output of each becomes the input for the next. Languages allowed: C, C++, Java, Python."
+              }
+            ],
+            "prizes": {
+              "first": "3,000",
+              "second": "2,000",
+              "third": "1,000"
+            },
+            "coordinators": [
+              { "name": "Karthikeyan R", "phone": "8870957957" },
+              { "name": "Jafer Sheriff", "phone": "9360964478" }
+            ],
+            "moreInfo": [
+              "Participants not participating in the Paper Presentation event are allowed First batch only.",
+              "Participants participating in the Paper Presentation are allowed in Second batch only."
+            ]
+          }
+        },
+        {
+          "id": "query-craft",
+          "title": "Query Craft",
+          "icon": "Database",
+          "eventType": "TECHNICAL",
+          "desc": "Query Craft is an SQL based event where participants are given a database and must write SQL queries to extract specific information. The queries will be evaluated based on correctness and efficiency.",
+          "rules": [
+            "Solo event.",
+            "Queries will be evaluated based on correctness and efficiency.",
+            "Participants must submit their queries within the given time limit."
+          ],
+          "details": {
+            "teamSize": "1 (Solo)",
+            "duration": "60 minutes",
+            "venue": "Computer Lab 2",
+            "rounds": [
+              {
+                "name": "Round 1 — Basics",
+                "description": "Write simple SELECT, JOIN, and aggregate queries on a provided schema. Top 15 move on."
+              },
+              {
+                "name": "Round 2 — Advanced",
+                "description": "Complex queries involving subqueries, window functions, and optimization. Judged on correctness and execution time."
+              }
+            ],
+            "prizes": {
+              "first": "2,500",
+              "second": "1,500",
+              "third": "1,000"
+            },
+            "coordinators": [
+              { "name": "Deepak R", "phone": "9876543212" }
+            ],
+            "moreInfo": []
+          }
+        },
+        {
+          "id": "tech-quiz",
+          "title": "Tech Quiz",
+          "icon": "HelpCircle",
+          "eventType": "NON_TECHNICAL",
+          "desc": "A fast-paced quiz covering general knowledge, aptitude, current affairs, and fun trivia. Teams compete in buzzer rounds to claim the crown.",
+          "rules": [
+            "Team of 2 members.",
+            "Multiple buzzer rounds.",
+            "No electronic devices allowed."
+          ],
+          "details": {
+            "teamSize": "2",
+            "duration": "45 minutes",
+            "venue": "Seminar Hall B",
+            "rounds": [
+              {
+                "name": "Prelims",
+                "description": "30 rapid-fire written questions. Top 6 teams advance."
+              },
+              {
+                "name": "Buzzer Round",
+                "description": "Head-to-head buzzer questions with bonus and penalty scoring."
+              }
+            ],
+            "prizes": {
+              "first": "2,000",
+              "second": "1,500",
+              "third": "500"
+            },
+            "coordinators": [
+              { "name": "Surya M", "phone": "9876500001" }
+            ],
+            "moreInfo": []
+          }
+        },
+        {
+          "id": "treasure-hunt",
+          "title": "Treasure Hunt",
+          "icon": "Map",
+          "eventType": "NON_TECHNICAL",
+          "desc": "Crack clues, decode puzzles, and race across the campus to find the hidden treasure before anyone else.",
+          "rules": [
+            "Team of 3 members.",
+            "Clues must be solved in order.",
+            "Use of phones for clue-solving is not allowed."
+          ],
+          "details": {
+            "teamSize": "3",
+            "duration": "60 minutes",
+            "venue": "Campus-wide",
+            "rounds": [
+              {
+                "name": "Single Round",
+                "description": "Teams follow a chain of 8 clues hidden across campus. First team to find the final treasure wins."
+              }
+            ],
+            "prizes": {
+              "first": "3,000",
+              "second": "2,000",
+              "third": "1,000"
+            },
+            "coordinators": [
+              { "name": "Nithya V", "phone": "9876500002" },
+              { "name": "Ravi K", "phone": "9876500003" }
+            ],
+            "moreInfo": [
+              "Wear comfortable shoes — you will be running!",
+              "Teams caught using phones will be disqualified."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
