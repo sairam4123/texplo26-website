@@ -13,30 +13,21 @@
             "Participants must submit a paper in advance.",
             "Presentation should only be 7-10 minutes long.",
             "Max two participants per team.",
-            "Not more than 15 slides per presentation."
+            "Not more than 20 slides per presentation."
           ],
           "details": {
             "teamSize": "1-2",
             "duration": "7-10 minutes",
-            "venue": "Seminar Hall A",
+            "venue": "IT Seminar Hall",
             "rounds": [
               {
-                "name": "Abstract Submission",
-                "description": "Submit a 300-word abstract on any topic related to technology or computer science. Shortlisted teams will proceed to the next round."
-              },
-              {
                 "name": "Presentation",
-                "description": "Present your paper using slides (max 15). Each team gets 7-10 minutes followed by a 3-minute Q&A."
+                "description": "Present your paper using slides (max 20). Each team gets 7-10 minutes followed by a 3-minute Q&A."
               }
             ],
-            "prizes": {
-              "first": "3,000",
-              "second": "2,000",
-              "third": "1,000"
-            },
             "coordinators": [
-              { "name": "Arun Kumar", "phone": "8870957957" },
-              { "name": "Priya S", "phone": "9360964478" }
+              { "name": "Karthikeyan R", "phone": "8870957957" },
+              { "name": "Jafer Sheriff", "phone": "9360964478" }
             ],
             "moreInfo": [
               "Participants not participating in the Code Relay event are allowed First batch only.",
@@ -45,11 +36,11 @@
           }
         },
         {
-          "id": "code-relay",
-          "title": "Code Relay",
+          "id": "code-fusion",
+          "title": "Code Fusion",
           "icon": "Code2",
           "eventType": "TECHNICAL",
-          "desc": "Code Relay is a competitive programming event where problems must be solved in a strict sequential order. The output of each question serves as the input for the next.",
+          "desc": "Code Fusion is a competitive programming event where problems must be solved in a strict sequential order. The output of each question serves as the input for the next.",
           "rules": [
             "Solo event.",
             "Participants must solve problems in a sequential order.",
@@ -85,15 +76,15 @@
           }
         },
         {
-          "id": "query-craft",
-          "title": "Query Craft",
+          "id": "pixel-cut",
+          "title": "Pixel Cut",
           "icon": "Database",
           "eventType": "TECHNICAL",
-          "desc": "Query Craft is an SQL based event where participants are given a database and must write SQL queries to extract specific information. The queries will be evaluated based on correctness and efficiency.",
+          "desc": "Pixel Cut is an poster making event where participants are given a image and must create a poster based on the theme of the image. The poster should be visually appealing and should convey a message related to technology or computer science.",
           "rules": [
             "Solo event.",
-            "Queries will be evaluated based on correctness and efficiency.",
-            "Participants must submit their queries within the given time limit."
+            "Participants must create a poster based on the given image.",
+            "Participants must submit their poster within the given time limit."
           ],
           "details": {
             "teamSize": "1 (Solo)",
@@ -101,28 +92,21 @@
             "venue": "Computer Lab 2",
             "rounds": [
               {
-                "name": "Round 1 — Basics",
-                "description": "Write simple SELECT, JOIN, and aggregate queries on a provided schema. Top 15 move on."
-              },
-              {
-                "name": "Round 2 — Advanced",
-                "description": "Complex queries involving subqueries, window functions, and optimization. Judged on correctness and execution time."
+                "name": "Poster Creation",
+                "description": "Participants will be given a theme and an image. They must create a poster that is visually appealing and conveys a message related to technology or computer science."
               }
             ],
             "prizes": {
-              "first": "2,500",
-              "second": "1,500",
-              "third": "1,000"
+              "first": "Medal and Certificate",
+              "second": "Medal and Certificate"
             },
-            "coordinators": [
-              { "name": "Deepak R", "phone": "9876543212" }
-            ],
+            "coordinators": [{ "name": "Deepak R", "phone": "9876543212" }],
             "moreInfo": []
           }
         },
         {
-          "id": "tech-quiz",
-          "title": "Tech Quiz",
+          "id": "bioscope",
+          "title": "Bioscope",
           "icon": "HelpCircle",
           "eventType": "NON_TECHNICAL",
           "desc": "A fast-paced quiz covering general knowledge, aptitude, current affairs, and fun trivia. Teams compete in buzzer rounds to claim the crown.",
@@ -150,46 +134,8 @@
               "second": "1,500",
               "third": "500"
             },
-            "coordinators": [
-              { "name": "Surya M", "phone": "9876500001" }
-            ],
+            "coordinators": [{ "name": "Surya M", "phone": "9876500001" }],
             "moreInfo": []
-          }
-        },
-        {
-          "id": "treasure-hunt",
-          "title": "Treasure Hunt",
-          "icon": "Map",
-          "eventType": "NON_TECHNICAL",
-          "desc": "Crack clues, decode puzzles, and race across the campus to find the hidden treasure before anyone else.",
-          "rules": [
-            "Team of 3 members.",
-            "Clues must be solved in order.",
-            "Use of phones for clue-solving is not allowed."
-          ],
-          "details": {
-            "teamSize": "3",
-            "duration": "60 minutes",
-            "venue": "Campus-wide",
-            "rounds": [
-              {
-                "name": "Single Round",
-                "description": "Teams follow a chain of 8 clues hidden across campus. First team to find the final treasure wins."
-              }
-            ],
-            "prizes": {
-              "first": "3,000",
-              "second": "2,000",
-              "third": "1,000"
-            },
-            "coordinators": [
-              { "name": "Nithya V", "phone": "9876500002" },
-              { "name": "Ravi K", "phone": "9876500003" }
-            ],
-            "moreInfo": [
-              "Wear comfortable shoes — you will be running!",
-              "Teams caught using phones will be disqualified."
-            ]
           }
         }
       ]

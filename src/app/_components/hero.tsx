@@ -16,7 +16,7 @@ function getTimeLeft(target: Date) {
   return { days, hours, minutes, seconds };
 }
 
-const EVENT_DATE = new Date("2026-03-20T09:00:00");
+const EVENT_DATE = new Date("2026-03-04T09:00:00");
 
 export default function Hero() {
   const [timeLeft, setTimeLeft] = useState(getTimeLeft(EVENT_DATE));

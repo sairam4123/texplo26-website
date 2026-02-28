@@ -165,24 +165,35 @@ function FlipCard({ event }: { event: EventItem }) {
           )}
 
           {/* Prizes */}
-          <div className="mt-auto grid grid-cols-3 gap-2 text-center">
-            {(
-              [
-                ["1st", d.prizes.first],
-                ["2nd", d.prizes.second],
-                ["3rd", d.prizes.third],
-              ] as const
-            ).map(([place, amt]) => (
-              <div
-                key={place}
-                className="rounded-lg border border-slate-100 bg-slate-50 py-2"
-              >
-                <Trophy className="mx-auto mb-0.5 h-3.5 w-3.5 text-cyan-500" />
-                <p className="text-[10px] text-slate-500">{place}</p>
-                <p className="text-xs font-bold text-slate-900">Rs. {amt}</p>
-              </div>
-            ))}
-          </div>
+          {d.prizes ? (
+            <div className="mt-auto grid grid-cols-3 gap-2 text-center">
+              {(
+                [
+                  ["1st", d.prizes?.first],
+                  ["2nd", d.prizes?.second],
+                  ["3rd", d.prizes?.third],
+                ] as const
+              ).map(
+                ([place, amt]) =>
+                  place && (
+                    <div
+                      key={place}
+                      className="rounded-lg border border-slate-100 bg-slate-50 py-2"
+                    >
+                      <Trophy className="mx-auto mb-0.5 h-3.5 w-3.5 text-cyan-500" />
+                      <p className="text-[10px] text-slate-500">{place}</p>
+                      <p className="text-xs font-bold text-slate-900">
+                        Rs. {amt}
+                      </p>
+                    </div>
+                  ),
+              )}
+            </div>
+          ) : (
+            <p className="mt-auto text-center text-sm font-semibold text-slate-700">
+              Prizes will be announced later.
+            </p>
+          )}
         </div>
       </motion.div>
     </div>

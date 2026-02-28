@@ -50,7 +50,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#events"
+            href="#register-cta"
             className="rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105"
           >
             Register

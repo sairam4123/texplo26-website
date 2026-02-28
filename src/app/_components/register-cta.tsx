@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Clock, ArrowRight } from "lucide-react";
 import Countdown from "./countdown";
 
-const REG_DEADLINE = new Date("2026-03-18T23:59:59");
+const REG_DEADLINE = new Date("2026-03-03T23:59:59");
 
 function getTimeLeft(target: Date) {
   const now = new Date();
@@ -29,7 +29,10 @@ export default function RegisterCta() {
   }, []);
 
   return (
-    <section className="relative bg-linear-to-b from-slate-950 to-slate-900 px-4 py-24">
+    <section
+      id="register-cta"
+      className="relative bg-linear-to-b from-slate-950 to-slate-900 px-4 py-24"
+    >
       <div className="mx-auto max-w-3xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -70,7 +73,7 @@ export default function RegisterCta() {
 
           {/* Register button */}
           <a
-            href="#"
+            href="https://forms.gle/B5S7Gg26fTTtMexg7"
             className="flex items-center justify-center gap-2 bg-linear-to-r from-cyan-500 to-blue-500 py-4 text-lg font-bold text-white transition-opacity hover:opacity-90"
           >
             <Clock className="h-5 w-5" />
