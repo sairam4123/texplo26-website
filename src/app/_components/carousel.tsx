@@ -181,7 +181,7 @@ export default function Carousel() {
                 <button
                   onClick={() => setMuted((m) => !m)}
                   aria-label={muted ? "Unmute" : "Mute"}
-                  className="absolute right-3 bottom-14 z-10 rounded-full bg-black/40 p-2 text-white backdrop-blur-sm transition-colors hover:bg-black/60 sm:bottom-16"
+                  className="absolute top-3 right-3 z-10 rounded-full bg-black/40 p-2 text-white backdrop-blur-sm transition-colors hover:bg-black/60"
                 >
                   {muted ? (
                     <VolumeX className="h-5 w-5" />

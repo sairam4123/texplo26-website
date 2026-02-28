@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Clock, ArrowRight } from "lucide-react";
 import Countdown from "./countdown";
+import FloatingParticles from "./floating-particles";
 
 const REG_DEADLINE = new Date("2026-03-03T23:59:59");
 
@@ -33,6 +34,14 @@ export default function RegisterCta() {
       id="register-cta"
       className="relative bg-linear-to-b from-slate-950 to-slate-900 px-4 py-24"
     >
+      {/* Background motions */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="animate-float-slow absolute -top-16 left-1/3 h-64 w-64 rounded-full bg-cyan-500/6 blur-3xl" />
+        <div className="animate-float-slower absolute -bottom-20 right-1/4 h-72 w-72 rounded-full bg-blue-500/6 blur-3xl" />
+        <div className="animate-pulse-glow absolute top-1/2 left-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full bg-indigo-500/5 blur-3xl" />
+      </div>
+      <FloatingParticles count={16} color="bg-cyan-300" maxSize={3} />
+
       <div className="mx-auto max-w-3xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

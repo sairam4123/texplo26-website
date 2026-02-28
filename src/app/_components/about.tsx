@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Users, Calendar, Trophy, BookOpen, ArrowRight } from "lucide-react";
+import FloatingParticles from "./floating-particles";
 
 const stats = [
   { icon: Users, label: "Departments", value: "8" },
@@ -16,6 +17,13 @@ export default function About() {
       id="about"
       className="relative bg-gradient-to-b from-slate-900 to-slate-950 px-4 py-24"
     >
+      {/* Background motions */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="animate-float-slower absolute -top-20 -right-20 h-72 w-72 rounded-full bg-cyan-500/5 blur-3xl" />
+        <div className="animate-float-slow absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-blue-500/5 blur-3xl" />
+      </div>
+      <FloatingParticles count={12} color="bg-blue-400" maxSize={2} />
+
       <div className="mx-auto max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

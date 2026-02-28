@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, Sparkles } from "lucide-react";
 import Countdown from "./countdown";
+import FloatingParticles from "./floating-particles";
 
 function getTimeLeft(target: Date) {
   const now = new Date();
@@ -33,11 +34,20 @@ export default function Hero() {
       id="hero"
       className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-linear-to-br from-slate-950 via-blue-950 to-slate-900 px-4 pt-24 pb-16 text-center"
     >
-      {/* Subtle animated background circles */}
+      {/* Animated background elements */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-cyan-500/10 blur-3xl" />
-        <div className="absolute -right-32 -bottom-32 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl" />
+        {/* Floating orbs */}
+        <div className="animate-float-slow absolute -top-32 -left-32 h-96 w-96 rounded-full bg-cyan-500/10 blur-3xl" />
+        <div className="animate-float-slower absolute -right-32 -bottom-32 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl" />
+        <div className="animate-pulse-glow absolute top-1/4 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-indigo-500/8 blur-3xl" />
+        {/* Orbiting accent */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <div className="animate-orbit h-3 w-3 rounded-full bg-cyan-400/20 blur-sm" />
+        </div>
       </div>
+
+      {/* Floating particles */}
+      <FloatingParticles count={25} color="bg-cyan-400" maxSize={3} />
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}

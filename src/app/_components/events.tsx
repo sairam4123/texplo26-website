@@ -18,6 +18,7 @@ import {
 import { useState } from "react";
 import type { LucideIcon } from "lucide-react";
 import eventsData from "~/data/events.json";
+import FloatingParticles from "./floating-particles";
 
 /* ------------------------------------------------------------------ */
 /*  Icon map                                                           */
@@ -211,6 +212,13 @@ export default function Events() {
       id="events"
       className="relative bg-gradient-to-b from-slate-900 to-slate-950 px-4 py-24"
     >
+      {/* Background motions */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="animate-float-slower absolute -top-16 right-1/4 h-72 w-72 rounded-full bg-blue-500/5 blur-3xl" />
+        <div className="animate-float-slow absolute bottom-10 -left-10 h-56 w-56 rounded-full bg-cyan-500/5 blur-3xl" />
+      </div>
+      <FloatingParticles count={10} color="bg-slate-400" maxSize={2} />
+
       <div className="mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

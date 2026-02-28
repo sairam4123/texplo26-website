@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Flame, Target, Zap, Award } from "lucide-react";
+import FloatingParticles from "./floating-particles";
 
 const highlights = [
   {
@@ -32,6 +33,13 @@ export default function Motivation() {
       id="motivation"
       className="relative bg-gradient-to-b from-slate-950 to-slate-900 px-4 py-24"
     >
+      {/* Background motions */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="animate-float-slow absolute top-10 -right-24 h-80 w-80 rounded-full bg-indigo-500/5 blur-3xl" />
+        <div className="animate-pulse-glow absolute -bottom-10 left-1/4 h-48 w-48 rounded-full bg-cyan-500/5 blur-3xl" />
+      </div>
+      <FloatingParticles count={14} color="bg-indigo-400" maxSize={2.5} />
+
       <div className="mx-auto max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
