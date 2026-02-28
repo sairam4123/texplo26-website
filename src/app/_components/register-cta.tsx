@@ -37,7 +37,7 @@ export default function RegisterCta() {
       {/* Background motions */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="animate-float-slow absolute -top-16 left-1/3 h-64 w-64 rounded-full bg-cyan-500/6 blur-3xl" />
-        <div className="animate-float-slower absolute -bottom-20 right-1/4 h-72 w-72 rounded-full bg-blue-500/6 blur-3xl" />
+        <div className="animate-float-slower absolute right-1/4 -bottom-20 h-72 w-72 rounded-full bg-blue-500/6 blur-3xl" />
         <div className="animate-pulse-glow absolute top-1/2 left-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full bg-indigo-500/5 blur-3xl" />
       </div>
       <FloatingParticles count={16} color="bg-cyan-300" maxSize={3} />
