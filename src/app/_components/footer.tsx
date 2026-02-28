@@ -30,7 +30,8 @@ export default function Footer() {
       </div>
 
       <p className="text-sm text-slate-400">
-        &copy; {new Date().getFullYear()} TECXPLO Committee. All rights reserved.
+        &copy; {new Date().getFullYear()} TECXPLO Committee. All rights
+        reserved.
       </p>
       <p className="mt-2 flex items-center gap-1 text-xs text-slate-500">
         Made with <Heart className="h-3 w-3 text-red-400" /> by Sairam M (Dept
