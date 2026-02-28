@@ -31,7 +31,7 @@ export default function Motivation() {
   return (
     <section
       id="motivation"
-      className="relative bg-gradient-to-b from-slate-950 to-slate-900 px-4 py-24"
+      className="relative bg-linear-to-b from-slate-950 to-slate-900 px-4 py-24"
     >
       {/* Background motions */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -52,7 +52,7 @@ export default function Motivation() {
             <h2 className="mb-2 text-4xl font-extrabold text-slate-900">
               Motivation
             </h2>
-            <div className="mb-8 h-1 w-16 rounded bg-gradient-to-r from-cyan-500 to-blue-500" />
+            <div className="mb-8 h-1 w-16 rounded bg-linear-to-r from-cyan-500 to-blue-500" />
 
             <div className="mb-10 space-y-4 leading-relaxed text-slate-700">
               <p>
@@ -87,7 +87,7 @@ export default function Motivation() {
                   transition={{ duration: 0.4, delay: i * 0.1 }}
                   className="flex gap-4 rounded-xl border border-slate-100 bg-slate-50 p-5 transition-shadow hover:shadow-md"
                 >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-linear-to-br from-cyan-500 to-blue-500">
                     <item.icon className="h-5 w-5 text-white" />
                   </div>
                   <div>

@@ -2,13 +2,16 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ShieldCheck } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { label: "About", href: "#about" },
-  { label: "Motivation", href: "#motivation" },
   { label: "Events", href: "#events" },
   { label: "Gallery", href: "#gallery" },
+  { label: "Instructions", href: "#instructions" },
+  { label: "Location", href: "#location" },
+  { label: "Contact", href: "#coordinators" },
 ];
 
 export default function Navbar() {
@@ -32,7 +35,13 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
-          <ShieldCheck className="h-7 w-7 text-cyan-400" />
+          <Image
+            src="/logos/texplo.png"
+            alt="Texplo logo"
+            width={36}
+            height={36}
+            className="h-9 w-9 object-contain"
+          />
           <span className="text-xl font-bold tracking-tight text-white">
             TEXPLO&apos;26
           </span>
@@ -51,9 +60,24 @@ export default function Navbar() {
           ))}
           <a
             href="#register-cta"
-            className="rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105"
+            className="rounded-full bg-linear-to-r from-cyan-500 to-blue-500 px-5 py-2 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105"
           >
             Register
+          </a>
+          {/* MCE logo */}
+          <a
+            href="https://mookambigai.ac.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-sm transition-transform hover:scale-110"
+          >
+            <Image
+              src="/logos/mce-logo-2-og.png"
+              alt="MCE logo"
+              width={30}
+              height={30}
+              className="h-7 w-7 object-contain"
+            />
           </a>
         </div>
 
@@ -94,7 +118,7 @@ export default function Navbar() {
               <a
                 href="#events"
                 onClick={() => setMobileOpen(false)}
-                className="rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-2 text-center text-sm font-semibold text-white"
+                className="rounded-full bg-linear-to-r from-cyan-500 to-blue-500 px-5 py-2 text-center text-sm font-semibold text-white"
               >
                 Register
               </a>

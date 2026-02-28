@@ -81,20 +81,20 @@ function FlipCard({ event }: { event: EventItem }) {
 
   return (
     <div
-      className="group h-[420px] cursor-pointer [perspective:1200px]"
+      className="group cursor-pointer p-2 perspective-distant"
       onClick={() => setFlipped((f) => !f)}
     >
       <motion.div
         animate={{ rotateY: flipped ? 180 : 0 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-        whileHover={{ scale: 1.04 }}
-        className="relative h-full w-full transform-3d"
+        transition={{ type: "spring", stiffness: 200, damping: 25 }}
+        whileHover={{ scale: 1.02 }}
+        className="relative h-105 w-full transform-3d"
       >
         {/* ---- FRONT ---- */}
-        <div className="absolute inset-0 flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm [backface-visibility:hidden]">
+        <div className="absolute inset-0 flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm backface-hidden">
           <div>
             <div className="mb-3 flex items-center gap-3">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-linear-to-br from-cyan-500 to-blue-500">
                 <Icon className="h-5 w-5 text-white" />
               </div>
               <h4 className="text-lg font-bold text-slate-900">
@@ -111,13 +111,13 @@ function FlipCard({ event }: { event: EventItem }) {
               ))}
             </ul>
           </div>
-          <span className="mt-4 inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 py-2.5 text-sm font-semibold text-white shadow">
+          <span className="mt-4 inline-flex items-center justify-center gap-2 rounded-lg bg-linear-to-r from-cyan-500 to-blue-500 py-2.5 text-sm font-semibold text-white shadow">
             Tap to see details
           </span>
         </div>
 
         {/* ---- BACK ---- */}
-        <div className="absolute inset-0 flex [transform:rotateY(180deg)] flex-col overflow-y-auto rounded-xl border border-slate-200 bg-white p-6 shadow-sm [backface-visibility:hidden]">
+        <div className="absolute inset-0 flex transform-[rotateY(180deg)] flex-col overflow-y-auto rounded-xl border border-slate-200 bg-white p-6 shadow-sm backface-hidden">
           <h4 className="mb-3 text-lg font-bold text-slate-900">
             {event.title}
           </h4>
@@ -210,7 +210,7 @@ export default function Events() {
   return (
     <section
       id="events"
-      className="relative bg-gradient-to-b from-slate-900 to-slate-950 px-4 py-24"
+      className="relative bg-linear-to-b from-slate-900 to-slate-950 px-4 py-24"
     >
       {/* Background motions */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -227,7 +227,7 @@ export default function Events() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="mb-2 text-4xl font-extrabold text-white">Events</h2>
-          <div className="mb-10 h-1 w-16 rounded bg-gradient-to-r from-cyan-500 to-blue-500" />
+          <div className="mb-10 h-1 w-16 rounded bg-linear-to-r from-cyan-500 to-blue-500" />
 
           {departments.map((dept, deptIdx) => {
             const technical = dept.events.filter(

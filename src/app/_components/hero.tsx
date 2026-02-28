@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, Sparkles } from "lucide-react";
+import Image from "next/image";
 import Countdown from "./countdown";
 import FloatingParticles from "./floating-particles";
 
@@ -63,6 +64,15 @@ export default function Hero() {
 
         {/* Card */}
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-sm sm:p-10">
+          <div className="mb-4 flex justify-center">
+            <Image
+              src="/logos/texplo.png"
+              alt="Texplo'26 logo"
+              width={80}
+              height={80}
+              className="h-20 w-20 object-contain"
+            />
+          </div>
           <h1 className="mb-2 text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
             TEXPLO&apos;26
           </h1>

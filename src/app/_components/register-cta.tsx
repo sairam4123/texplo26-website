@@ -58,6 +58,10 @@ export default function RegisterCta() {
               Join us now by registering today!
             </p>
 
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-cyan-50 px-5 py-2 text-sm font-bold text-cyan-700">
+              Registration Fee: &#8377;200 per student
+            </div>
+
             <p className="mb-1 text-base font-semibold text-slate-700">
               Registration ends
             </p>

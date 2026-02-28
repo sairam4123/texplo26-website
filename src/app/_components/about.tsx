@@ -15,7 +15,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative bg-gradient-to-b from-slate-900 to-slate-950 px-4 py-24"
+      className="relative bg-linear-to-b from-slate-900 to-slate-950 px-4 py-24"
     >
       {/* Background motions */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -38,6 +38,10 @@ export default function About() {
             </h2>
 
             <div className="space-y-4 leading-relaxed text-slate-700">
+              <p className="text-sm font-semibold tracking-wide text-cyan-600 uppercase">
+                A National Level Technical Symposium &mdash; In association with
+                Institution&apos;s Innovation Council (IIC)
+              </p>
               <p>
                 Happening offline every year,{" "}
                 <span className="font-semibold text-cyan-600">
@@ -92,7 +96,7 @@ export default function About() {
             {/* CTA */}
             <a
               href="#events"
-              className="mt-8 flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 py-3 text-center font-semibold text-white shadow-lg transition-transform hover:scale-[1.02]"
+              className="mt-8 flex items-center justify-center gap-2 rounded-xl bg-linear-to-r from-cyan-500 to-blue-500 py-3 text-center font-semibold text-white shadow-lg transition-transform hover:scale-[1.02]"
             >
               Learn more
               <ArrowRight className="h-4 w-4" />

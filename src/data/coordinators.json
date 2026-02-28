@@ -1,0 +1,31 @@
+{
+  "convenor": {
+    "name": "Prof. T. Vinodhkannan",
+    "designation": "Convenor – Asst. Prof. / Dept of IT, M.Tech., (Ph.D).",
+    "phone": "9443711811",
+    "email": "tecxplo26@gmail.com"
+  },
+  "coConvenor": {
+    "name": "Prof. E. Vinoth",
+    "designation": "Co-Convenor – Asst. Prof. / Dept of ECE, M.Tech., (Ph.D).",
+    "phone": "9944617849",
+    "email": "tecxplo26@gmail.com"
+  },
+  "studentCoordinators": [
+    {
+      "name": "Sairam M",
+      "designation": "Overall Student Coordinator",
+      "phone": "9876543212"
+    },
+    {
+      "name": "Karthikeyan R",
+      "designation": "Student Coordinator",
+      "phone": "8870957957"
+    },
+    {
+      "name": "Jafer Sheriff",
+      "designation": "Student Coordinator",
+      "phone": "9360964478"
+    }
+  ]
+}
