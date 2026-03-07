@@ -26,13 +26,13 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
+      className={`fixed top-4 left-1/2 z-50 w-[calc(100%-1.5rem)] max-w-7xl -translate-x-1/2 rounded-full border border-white/10 transition-all duration-300 ${
         scrolled
           ? "bg-slate-900/90 shadow-lg backdrop-blur-md"
-          : "bg-transparent"
+          : "bg-slate-900/60 backdrop-blur-sm"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <div className="flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
           <Image
@@ -102,7 +102,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="overflow-hidden bg-slate-900/95 backdrop-blur-md md:hidden"
+            className="overflow-hidden rounded-b-2xl bg-slate-900/95 backdrop-blur-md md:hidden"
           >
             <div className="flex flex-col gap-4 px-6 py-4">
               {navLinks.map((link) => (
