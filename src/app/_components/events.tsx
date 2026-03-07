@@ -14,13 +14,6 @@ import {
   Phone,
   Trophy,
   Info,
-  Monitor,
-  Camera,
-  Gamepad2,
-  MessageSquare,
-  Scissors,
-  Sparkles,
-  Network,
 } from "lucide-react";
 import { useState } from "react";
 import type { LucideIcon } from "lucide-react";
@@ -36,13 +29,6 @@ const iconMap: Record<string, LucideIcon> = {
   Database,
   HelpCircle,
   Map,
-  Monitor,
-  Camera,
-  Gamepad2,
-  MessageSquare,
-  Scissors,
-  Sparkles,
-  Network,
 };
 
 /* ------------------------------------------------------------------ */

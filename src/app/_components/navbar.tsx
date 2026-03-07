@@ -37,13 +37,13 @@ export default function Navbar() {
         <a href="#" className="flex items-center gap-2">
           <Image
             src="/logos/texplo.png"
-            alt="Tecxplo logo"
+            alt="Texplo logo"
             width={36}
             height={36}
             className="h-9 w-9 object-contain"
           />
           <span className="text-xl font-bold tracking-tight text-white">
-            TECXPLO&apos;26
+            TEXPLO&apos;26
           </span>
         </a>
 
